@@ -1,15 +1,10 @@
 import React from 'react'
 import '../App.css'
+import Shinetime561 from '../Images/MobileDetailing.PNG'
+import weatherapp from '../Images/weatherapp.PNG'
+import tictactoe from '../Images/tictactoe.PNG'
 
 const Project = () => {
-
-
-  const hrStyle = {
-    color: "black"
-  }
-
-
-
   return (
     <div  id='project' className='projectContainer container-fluid'>
         <hr />
@@ -20,7 +15,7 @@ const Project = () => {
     <div className="card">
       <div className="card-body">
         <div className="card-img">
-          <img src="./images/mobiledetailing.png"  />
+          <img src={Shinetime561}  />
         </div>
         <div className="card-title">
           <h4>ShineTime561</h4>
@@ -36,7 +31,7 @@ const Project = () => {
       <div className="card">
       <div className="card-body">
         <div className="card-img">
-          <img src="./images/weatherapp.png" />
+          <img src={weatherapp} />
         </div>
         <div className="card-bottom">
         <div className="card-title">
@@ -53,7 +48,7 @@ const Project = () => {
       <div className="card">
       <div className="card-body">
         <div className="card-img">
-          <img src="./images/tictactoe.png" />
+          <img src={tictactoe} />
         </div>
         <div className="card-title">
           <h4>Tic-Tac-Toe</h4>
