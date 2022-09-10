@@ -1,7 +1,7 @@
 {
   "name": "portfolioapp",
   "version": "0.1.0",
-  "homepage": "http://Qunnderrie1.github.io/PortfolioApp",
+  "homepage": "http://Qunnderrie1.github.io/PortfolioWebsite",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
