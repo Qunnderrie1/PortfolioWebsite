@@ -1,11 +1,16 @@
+import { MotionConfig } from 'framer-motion';
 import React from 'react'
 import '../App.css'
-
+import {motion} from "framer-motion"
 
 
 const Skills = () => {
   return (
-    <div className='skillsContainer container-fluid'>
+    <motion.div 
+    initial={{ opacity: 0 , y: 400}} 
+    transition={{delay: 0.2}}
+    whileInView={{opacity: 1 , y: 0}}
+    className='skillsContainer container-fluid'>
         <h2 className='headerText'>&#x3D;&gt; Skills</h2>
         <div className='listContainer'>
         <div className='leftSkillsContainer'>
@@ -29,7 +34,7 @@ const Skills = () => {
             </ul>
         </div>
      </div>
-    </div>
+    </motion.div>
   )
 }
 

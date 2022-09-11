@@ -3,10 +3,14 @@ import '../App.css'
 import Shinetime561 from '../Images/MobileDetailing.PNG'
 import weatherapp from '../Images/weatherapp.PNG'
 import tictactoe from '../Images/tictactoe.PNG'
+import {motion} from "framer-motion"
 
 const Project = () => {
   return (
-    <div  id='project' className='projectContainer container-fluid'>
+    <motion.div
+    initial={{ opacity: 0 , y: 400}} 
+    transition={{delay: 0.2}}
+    whileInView={{opacity: 1 , y: 0}} id='project' className='projectContainer container-fluid'>
         <hr />
       <h2 className='headerText'>&#x3D;&gt; Project</h2>
 
@@ -65,7 +69,7 @@ const Project = () => {
     </div>
       
 
-    </div>
+    </motion.div>
   )
 }
 
