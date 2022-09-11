@@ -3,20 +3,37 @@ body{
   font-family: 'Montserrat', sans-serif;
   cursor: auto ;
 }
+a:visited{
+  color: #F0FF6D;
+}
+
+.openMenu{
+  display: none;
+}
+.closeMenu{
+  display:none;
+}
+.hamburgerMenu{
+  display: none;
+}
+
 .App {
   text-align: center;
   position: relative;
   padding:0;
 }
+
 .navContainer{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   width: 100%;
   height: 150px;
   padding: 20px;
 
+
 }
+
 .nav-items{
   color: white;
   justify-content: center;
@@ -25,16 +42,25 @@ body{
   list-style-type: none;
   display:flex;
   gap: 20px;
-
-
 }
 
+.close{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+}
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 20px;
+  width: 100%;
+
+  
 }
 .logo{
   color: #F0FF6D;
@@ -43,18 +69,15 @@ body{
 a{
   color:white;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 a:hover{
   color: #F0FF6D;
   font-weight: bold;
-  text-decoration-style: wavy;
-
-
 }
 
 .headerContainer{
-  margin-top: 200px;
+  margin-top: 100px;
   text-align: start;
 }
 .helloText{
@@ -268,36 +291,56 @@ span{
 
 
 @media screen and (max-width: 1162px) {
+  .openMenu{
+    display: inline-block;
+    margin: 20px;
+  }
+  .closeMenu{
+    display: inline-block;
+    margin: 20px;
+  }
 
+  .hamburgerMenu{
+    display: inline-block;
+  }
 
+  a:visited{
+    color: #041C32;
+  }
+  
   li{
     margin-top: 20px;
     text-align: center;
     list-style-type: none;
-    border-bottom:#041C32 1px solid;
     width: 75%;
   }
   li::marker{
     color: #F0FF6D;
   }
 
-  .navContainer{
-    align-items: flex-start;
-    width: 100%;
-
-  }
   .nav{
+    background-color: #F0FF6D;
     align-items: center;
     width: 100%;
-    display: inline;
+    display: inline-block;
+
+  }
+  .close{
+   display: none;
+
   }
   a{
     color: #041C32;
     font-weight: bold;
   }
   .navContainer{
-    background-color: #F0FF6D;
+    padding: 0;
+    width: 100%;
     height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
   }
   .nav-items{
     display: flex;
