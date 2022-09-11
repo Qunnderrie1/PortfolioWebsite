@@ -3,7 +3,7 @@ import '../App.css'
 import {FiMenu }  from 'react-icons/fi'
 import { HiOutlineX}  from 'react-icons/hi'
 import { useState } from 'react'
-import { motion} from 'framer-motion'
+
 
 
 

@@ -1,4 +1,3 @@
-import { MotionConfig } from 'framer-motion';
 import React from 'react'
 import '../App.css'
 import {motion} from "framer-motion"
