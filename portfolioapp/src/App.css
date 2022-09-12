@@ -1,8 +1,7 @@
 body{
   background-color: #041C32;
   font-family: 'Montserrat', sans-serif;
-  cursor: auto ;
-  overflow: hidden;
+
 }
 a:visited{
   color: #F0FF6D;
@@ -292,6 +291,9 @@ span{
 
 
 @media screen and (max-width: 1162px) {
+  .App{
+  overflow-x:hidden;
+  }
   .openMenu{
     display: inline-block;
     margin: 20px;
